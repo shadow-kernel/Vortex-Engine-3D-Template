@@ -87,8 +87,8 @@ public class LobbyController : VortexBehaviour
         World.Add(F + "pottedPlant.glb",      -2.8f, 0f, 1.8f, 0f, 1f);
         World.Add(F + "chair.glb",             1.6f, 0f, 0.8f, 200f, 1f);
 
-        // a neutral character standing on the stage
-        World.Add("Assets/Models/character.glb", 0f, 0f, -0.4f, 180f, 1f);
+        // the Vortex mascot standing on the stage (procedurally generated, CC0 — no third-party asset)
+        World.Add("Assets/Models/mascot.obj", 0f, 0f, -0.4f, 180f, 1f);
     }
 
     private View MakeView(Vector3 pos)

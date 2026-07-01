@@ -1,0 +1,36 @@
+{
+  "Name": "visor",
+  "Version": "2.0",
+  "BaseColor": [
+    0.129999995,
+    0.829999983,
+    0.930000007,
+    1
+  ],
+  "Metallic": 0.100000001,
+  "Roughness": 0.200000003,
+  "AmbientOcclusion": 1,
+  "NormalStrength": 1,
+  "HeightScale": 0.0500000007,
+  "AlphaCutoff": 0.5,
+  "UseDirectXNormals": true,
+  "EmissiveStrength": 2.5,
+  "EmissiveColor": [
+    0.129999995,
+    0.829999983,
+    0.930000007
+  ],
+  "TwoSided": false,
+  "BlendMode": "Opaque",
+  "ShaderType": "StandardPBR",
+  "CastShadows": true,
+  "ReceiveShadows": true,
+  "UVTiling": [
+    1,
+    1
+  ],
+  "UVOffset": [
+    0,
+    0
+  ]
+}

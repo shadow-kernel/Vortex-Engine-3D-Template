@@ -1,0 +1,12 @@
+﻿{
+  "Guid": "01a95808-b467-470e-8030-3e9e15bbdb85",
+  "Type": 6,
+  "RelativePath": "Assets\\Shaders\\TestMagenta.hlsl",
+  "FileName": "TestMagenta.hlsl",
+  "ImportDate": "\/Date(1782891258484+0200)\/",
+  "LastModified": "\/Date(1782891258484+0200)\/",
+  "FileSize": 0,
+  "Dependencies": [ ],
+  "ImportSettings": { },
+  "Tags": [ ]
+}

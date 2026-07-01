@@ -1,0 +1,12 @@
+﻿{
+  "Guid": "f5eda7d5-a215-44c8-af73-d2a788bc77b0",
+  "Type": 6,
+  "RelativePath": "Assets\\Shaders\\TestShader.hlsl",
+  "FileName": "TestShader.hlsl",
+  "ImportDate": "\/Date(1782893835145+0200)\/",
+  "LastModified": "\/Date(1782893835145+0200)\/",
+  "FileSize": 0,
+  "Dependencies": [ ],
+  "ImportSettings": { },
+  "Tags": [ ]
+}

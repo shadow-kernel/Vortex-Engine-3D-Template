@@ -1,0 +1,8 @@
+{
+  "name": "3D Starter",
+  "tagline": "Start screen + playable mini-world",
+  "description": "A complete, ready-to-run 3D starter: a cinematic start screen with a Play button, a full options + pause menu, and a small first-person mini-world you spawn into. Movement works with keyboard + mouse AND a game controller out of the box. Keep the whole framework and swap in your own world.",
+  "preview": "preview.png",
+  "project": ".",
+  "order": 0
+}

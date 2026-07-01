@@ -1,0 +1,7 @@
+﻿bin/
+obj/
+Library/
+Build/
+Temp/
+Logs/
+.vs/

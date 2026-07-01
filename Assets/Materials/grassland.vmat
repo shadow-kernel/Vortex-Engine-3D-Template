@@ -1,0 +1,36 @@
+{
+  "Name": "grassland",
+  "Version": "2.0",
+  "BaseColor": [
+    0.300000012,
+    0.519999981,
+    0.239999995,
+    1
+  ],
+  "Metallic": 0,
+  "Roughness": 0.949999988,
+  "AmbientOcclusion": 1,
+  "NormalStrength": 1,
+  "HeightScale": 0.0500000007,
+  "AlphaCutoff": 0.5,
+  "UseDirectXNormals": true,
+  "EmissiveStrength": 0,
+  "EmissiveColor": [
+    0,
+    0,
+    0
+  ],
+  "TwoSided": false,
+  "BlendMode": "Opaque",
+  "ShaderType": "StandardPBR",
+  "CastShadows": true,
+  "ReceiveShadows": true,
+  "UVTiling": [
+    1,
+    1
+  ],
+  "UVOffset": [
+    0,
+    0
+  ]
+}

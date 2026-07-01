@@ -1,0 +1,30 @@
+{
+  "vui": 1, "designW": 1920, "designH": 1080,
+  "root": {
+    "kind": "Panel", "id": "pauseRoot", "anchor": "TopLeft",
+    "stretchX": true, "stretchY": true, "off": [0,0], "size": [0,0],
+    "bg": [0.02,0.01,0.012,0.66], "cursorLocked": false, "blocksInput": true,
+    "children": [
+      { "kind": "Text", "id": "title", "anchor": "TopCenter", "off": [0,160], "size": [900,80],
+        "text": "PAUSED", "fontSize": 64, "weight": 700, "align": 1, "fg": [0.62,0.03,0.03,1] },
+      { "kind": "Text", "id": "tagline", "anchor": "TopCenter", "off": [0,240], "size": [900,28],
+        "text": "the night waits.", "fontSize": 17, "weight": 400, "align": 1, "fg": [0.45,0.35,0.35,1] },
+
+      { "kind": "Button", "id": "resumeButton", "anchor": "Center", "off": [0,-40], "size": [300,60],
+        "text": "RESUME", "fontSize": 26, "weight": 700, "radius": 4,
+        "bg": [0.10,0.02,0.02,0.92], "hoverTint": [0.55,0.04,0.04,1], "fg": [0.9,0.85,0.85,1], "clickAction": "OnResume" },
+      { "kind": "Button", "id": "optionsButton", "anchor": "Center", "off": [0,32], "size": [300,56],
+        "text": "OPTIONS", "fontSize": 22, "weight": 600, "radius": 4,
+        "bg": [0.06,0.04,0.04,0.9], "hoverTint": [0.30,0.05,0.05,1], "fg": [0.8,0.75,0.75,1], "clickAction": "OnPauseOptions" },
+      { "kind": "Button", "id": "lobbyButton", "anchor": "Center", "off": [0,98], "size": [300,56],
+        "text": "LEAVE TO LOBBY", "fontSize": 20, "weight": 600, "radius": 4,
+        "bg": [0.06,0.04,0.04,0.9], "hoverTint": [0.30,0.05,0.05,1], "fg": [0.8,0.75,0.75,1], "clickAction": "OnToLobby" },
+      { "kind": "Button", "id": "quitButton", "anchor": "Center", "off": [0,164], "size": [300,56],
+        "text": "QUIT GAME", "fontSize": 20, "weight": 600, "radius": 4,
+        "bg": [0.09,0.02,0.02,0.92], "hoverTint": [0.45,0.04,0.04,1], "fg": [0.86,0.78,0.78,1], "clickAction": "OnQuitGame" },
+
+      { "kind": "Text", "id": "footer", "anchor": "BottomCenter", "off": [0,-22], "size": [900,24],
+        "text": "ESC to resume", "fontSize": 13, "weight": 400, "align": 1, "fg": [0.4,0.3,0.3,1] }
+    ]
+  }
+}

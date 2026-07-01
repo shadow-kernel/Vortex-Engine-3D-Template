@@ -1,0 +1,53 @@
+﻿{
+  "id": "c80d4b2f-1ec6-4562-948f-e087b2fd72de",
+  "name": "plant_bushDetailed",
+  "isActive": true,
+  "isStatic": false,
+  "layer": 0,
+  "tag": "Untagged",
+  "children": [ ],
+  "components": [
+    {
+      "__type": "Transform",
+      "id": "8d49944b-4bf9-4a22-83f3-31e7f201ca51",
+      "isEnabled": true,
+      "localPosition": {
+        "x": 54.92002,
+        "y": 0,
+        "z": 29.45
+      },
+      "localRotation": {
+        "x": 0,
+        "y": 124.145088,
+        "z": 0
+      },
+      "localScale": {
+        "x": 0.5478218,
+        "y": 0.5478218,
+        "z": 0.5478218
+      }
+    },
+    {
+      "__type": "MeshRenderer",
+      "id": "0bcd0a50-5dca-49f2-aefd-8fe123e05fc5",
+      "isEnabled": true,
+      "meshPath": "Assets\/Models\/nature\/plant_bushDetailed.glb",
+      "materialPath": null,
+      "castShadows": true,
+      "receiveShadows": true,
+      "renderLayer": 0,
+      "colorR": 0.7,
+      "colorG": 0.7,
+      "colorB": 0.7,
+      "colorA": 1,
+      "metallic": 0,
+      "roughness": 0.5,
+      "normalStrength": 1,
+      "texturePath": null,
+      "shaderPath": null
+    }
+  ],
+  "isFolder": false,
+  "prefabPath": null,
+  "isLockedToParent": false
+}

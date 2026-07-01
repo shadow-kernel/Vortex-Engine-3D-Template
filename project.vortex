@@ -1,0 +1,34 @@
+﻿{
+  "id": "a1cb32ad-19e2-4796-aa3f-1515eff8926d",
+  "name": "New Project",
+  "version": "1.0.0",
+  "engineVersion": "1.0.0",
+  "lastModified": "\/Date(1782912310169+0200)\/",
+  "createdAt": "\/Date(1782912310173+0200)\/",
+  "thumbnailPath": "C:\\Users\\Administrator\\VortexEngineProjects\\New Project\\.ve\\icon.png",
+  "startSceneId": "dcad0628-9ade-4b2d-829e-8de77a0cd138",
+  "lastOpenSceneId": "b0c83b4a-ea81-4a95-9031-f918e6ca8655",
+  "scenes": [
+    {
+      "id": "dcad0628-9ade-4b2d-829e-8de77a0cd138",
+      "name": "Lobby",
+      "path": "Lobby.vscene",
+      "loadOnStart": false
+    },
+    {
+      "id": "b0c83b4a-ea81-4a95-9031-f918e6ca8655",
+      "name": "Match",
+      "path": "Match.vscene",
+      "loadOnStart": false
+    }
+  ],
+  "settings": {
+    "companyName": "DefaultCompany",
+    "productName": "My Game",
+    "defaultScreenWidth": 1920,
+    "defaultScreenHeight": 1080,
+    "fullscreenByDefault": false,
+    "vSync": true,
+    "targetFPS": 60
+  }
+}

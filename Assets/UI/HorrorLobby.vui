@@ -1,0 +1,38 @@
+{
+  "vui": 1, "designW": 1920, "designH": 1080,
+  "root": {
+    "kind": "Panel", "id": "lobbyRoot", "anchor": "TopLeft",
+    "stretchX": true, "stretchY": true, "off": [0,0], "size": [0,0],
+    "bg": [0.02,0.01,0.012,0.55], "cursorLocked": false, "blocksInput": true,
+    "children": [
+      { "kind": "Text", "id": "title", "anchor": "TopCenter", "off": [0,120], "size": [1200,90],
+        "text": "FREDDY'S  MOTEL", "fontSize": 78, "weight": 700, "align": 1, "fg": [0.62,0.03,0.03,1],
+        "bind": { "color": true } },
+      { "kind": "Text", "id": "neon", "anchor": "TopCenter", "off": [0,210], "size": [800,44],
+        "text": "●   N O   V A C A N C Y   ●", "fontSize": 30, "weight": 700, "align": 1, "fg": [0.85,0.12,0.05,1],
+        "bind": { "color": true, "visible": true } },
+      { "kind": "Text", "id": "tagline", "anchor": "TopCenter", "off": [0,270], "size": [900,30],
+        "text": "they only come out at night.", "fontSize": 18, "weight": 400, "align": 1, "fg": [0.45,0.35,0.35,1] },
+
+      { "kind": "Button", "id": "playButton", "anchor": "Center", "off": [0,40], "size": [300,62],
+        "text": "ENTER", "fontSize": 28, "weight": 700, "radius": 4,
+        "bg": [0.10,0.02,0.02,0.9], "hoverTint": [0.55,0.04,0.04,1], "fg": [0.9,0.85,0.85,1], "clickAction": "OnEnter" },
+      { "kind": "Button", "id": "optionsButton", "anchor": "Center", "off": [0,114], "size": [300,56],
+        "text": "OPTIONS", "fontSize": 22, "weight": 600, "radius": 4,
+        "bg": [0.06,0.04,0.04,0.9], "hoverTint": [0.30,0.05,0.05,1], "fg": [0.8,0.75,0.75,1], "clickAction": "OnOptions" },
+      { "kind": "Button", "id": "quitButton", "anchor": "Center", "off": [0,180], "size": [300,56],
+        "text": "LEAVE", "fontSize": 22, "weight": 600, "radius": 4,
+        "bg": [0.06,0.04,0.04,0.9], "hoverTint": [0.30,0.05,0.05,1], "fg": [0.8,0.75,0.75,1], "clickAction": "OnLeave" },
+
+      { "kind": "Text", "id": "footer", "anchor": "BottomLeft", "off": [24,-18], "size": [600,24],
+        "text": "VORTEX ENGINE  ·  press ENTER to begin the night", "fontSize": 13, "weight": 400, "align": 0, "fg": [0.4,0.3,0.3,1] },
+
+      { "kind": "Panel", "id": "blood", "anchor": "TopLeft", "stretchX": true, "stretchY": true, "off": [0,0], "size": [0,0],
+        "bg": [0.25,0.0,0.0,0.0], "bind": { "color": true } },
+      { "kind": "Panel", "id": "flicker", "anchor": "TopLeft", "stretchX": true, "stretchY": true, "off": [0,0], "size": [0,0],
+        "bg": [0.0,0.0,0.0,0.0], "bind": { "color": true } },
+      { "kind": "Panel", "id": "lightning", "anchor": "TopLeft", "stretchX": true, "stretchY": true, "off": [0,0], "size": [0,0],
+        "bg": [0.85,0.88,1.0,0.0], "bind": { "color": true } }
+    ]
+  }
+}

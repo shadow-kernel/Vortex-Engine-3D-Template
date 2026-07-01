@@ -134,30 +134,28 @@ public class PlayerController : VortexBehaviour
         if (float.IsNaN(_vz) || float.IsInfinity(_vz)) _vz = 0f;
         if (float.IsNaN(_vy) || float.IsInfinity(_vy)) _vy = 0f;
 
-        // ---- Apply move + jump/gravity ----
-        float eyeY = crouch ? _standEyeY - CrouchDrop : _standEyeY;
-        Vector3 p = Position;
-        p.X += _vx * dt;
-        p.Z += _vz * dt;
-
+        // ---- Apply move through the engine COLLISION system: solid ground/walls/props, no clipping, no
+        // falling through. The player is a capsule; Physics.MoveCharacter slides it along surfaces. EntityId
+        // registers this character so other players can't walk through it. ----
         bool jump = Input.GetKey("Space") || Input.GetGamepadButton("A");
-        if (_grounded)
-        {
-            if (jump && !_jumpHeld) { _vy = JumpSpeed; _grounded = false; }
-            else { p.Y = eyeY; _vy = 0f; }
-        }
-        if (!_grounded)
-        {
-            _vy -= Gravity * dt;
-            p.Y += _vy * dt;
-            if (p.Y <= eyeY) { p.Y = eyeY; _vy = 0f; _grounded = true; }
-        }
+        if (_grounded && jump && !_jumpHeld) { _vy = JumpSpeed; _grounded = false; }
+        else if (_grounded && _vy < 0f) _vy = 0f;
+        _vy -= Gravity * dt;                       // gravity always; landing is detected via Grounded below
         _jumpHeld = jump;
 
-        if (float.IsNaN(p.X) || float.IsInfinity(p.X)) p.X = 0f;
-        if (float.IsNaN(p.Y) || float.IsInfinity(p.Y)) p.Y = eyeY;
-        if (float.IsNaN(p.Z) || float.IsInfinity(p.Z)) p.Z = 0f;
-        Position = p;
+        float eyeOffset = crouch ? _standEyeY - CrouchDrop : _standEyeY;
+        const float radius = 0.35f, height = 1.85f;
+        Vector3 cam = Position;
+        Vector3 feet = new Vector3(cam.X, cam.Y - eyeOffset, cam.Z);
+        Vector3 disp = new Vector3(_vx * dt, _vy * dt, _vz * dt);
+        feet = Physics.MoveCharacter(feet, radius, height, disp, EntityId);
+        _grounded = Physics.Grounded;
+        if (_grounded && _vy < 0f) _vy = 0f;
+
+        if (float.IsNaN(feet.X) || float.IsInfinity(feet.X)) feet.X = 0f;
+        if (float.IsNaN(feet.Y) || float.IsInfinity(feet.Y)) feet.Y = 0f;
+        if (float.IsNaN(feet.Z) || float.IsInfinity(feet.Z)) feet.Z = 0f;
+        Position = new Vector3(feet.X, feet.Y + eyeOffset, feet.Z);
     }
 
     // Accelerate toward the wish direction up to wishSpeed (classic Quake/Source model). Only adds the speed

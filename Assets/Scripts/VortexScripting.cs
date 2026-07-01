@@ -86,6 +86,16 @@ namespace Vortex
     /// <summary>Player camera control.</summary>
     public static class Camera { public static void SetFieldOfView(float fovDegrees) { } }
 
+    /// <summary>Collision. MoveCharacter resolves a character capsule (feet, radius, height) against the scene's
+    /// colliders (solid ground/walls/props, no clipping). Grounded = resting on a surface. characterId (e.g. your
+    /// EntityId) stops other characters walking through you.</summary>
+    public static class Physics
+    {
+        public static bool Grounded => false;
+        public static Vector3 MoveCharacter(Vector3 feet, float radius, float height, Vector3 move) => new Vector3(feet.X + move.X, feet.Y + move.Y, feet.Z + move.Z);
+        public static Vector3 MoveCharacter(Vector3 feet, float radius, float height, Vector3 move, long characterId) => new Vector3(feet.X + move.X, feet.Y + move.Y, feet.Z + move.Z);
+    }
+
     /// <summary>Generic engine settings (the GAME's options menu applies these).</summary>
     public static class Settings
     {
